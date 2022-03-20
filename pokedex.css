@@ -1,0 +1,63 @@
+h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #E60606;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+#main {
+    background-color: #E60606;
+}
+
+#img {
+    background-color: white;
+    border-color: blue;
+    margin: 1rem;
+    border-radius: 1rem;
+    width: 500px;
+    height: 380px;
+    padding-top: 1rem;
+    border-color: black;
+    border-style: solid;
+}
+
+#info {
+    background-color: yellowgreen;
+    margin: 1rem;
+    height: auto;
+    width: auto;
+    border-radius: 1rem;
+    border-color: black;
+    border-style: solid;
+}
+
+#pokedex {
+    background-color: #E60606;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    border-radius: 5rem;
+    width: 950px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+#buscar {
+    background-color: #E60606;
+}
+
+body {
+    background-color: dimgray;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    background-color: white;
+}

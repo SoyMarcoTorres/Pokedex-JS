@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./pokedex.css">
+    
+</head>
+<body>
+    
+    <!--Arriba-->
+    <header>
+        <div class="container" id="main">
+            <div class="row text-center">
+                <div class="col"><img src="./imgs/pokemon.png" class="img-fluid rounded" alt="pokemon" width="500px"></div>
+            </div>
+            <div class="row text-center">
+                <div class="col"><img src="./imgs/pokedex.png" class="img-fluid rounded" alt="pokedex" width="400px"></div>
+            </div>
+        </div>
+    </header>
+    <br><br><br><br>
+
+    <!--Pokedex Cuerpo-->
+
+    <div class="container" id="pokedex">
+        <div class="row text-center" id="buscar">
+            <div class="col-6">
+                <h3>Ingresa el nombre de tu pokemon!</h3>
+            </div>
+            <div class="col-3">
+                <input class="form-control" itemid="input" type="text" placeholder="Nombre Pokémon" id="pokeName" name="pokeName">
+            </div>
+            <div class="col-3">
+                <button type="button" class="btn btn-warning btn-lg" onclick="fetchPokemon()">Buscar Pokemon</button>
+            </div>
+        </div><br>
+        <div class="row text-center" id="prueba">
+            <div class="col-6 text-center"  id="img">
+                <img src="./imgs/pokeball.png" alt="Pokemon" id="pokeImg" width="350px">
+            </div><br><br><br><br>
+            <div class="col" id="info"><br>
+                <div class="row text-center"><br><br>
+                    <div pokeName class="col-12"><h3 id="pokeNames">¿Quién es ese Pokémon?</h3></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-6">ID:</div>
+                    <div class="col-6" id="pokeID"></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-6">Tipo:</div>
+                    <div class="col-6" id="pokeType"></div>
+                </div><br>
+                <div class="row text-center">
+                    <div class="col-12"><h4>Estadísticas</h4></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-6">HP</div>
+                    <div class="col-6" id="pokeHP"></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-6">Attack</div>
+                    <div class="col-6" id="pokeAT"></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-6">Defense</div>
+                    <div class="col-6" id="pokeDF"></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-6">Special Attack</div>
+                    <div class="col-6" id="pokeSA"></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-6">Special Defense</div>
+                    <div class="col-6" id="pokeSD"></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-6">Speed</div>
+                    <div class="col-6" id="pokeSP"></div>
+                </div>
+                <!--
+                <div class="row text-center">
+                    <div class="col-6">Movimientos:</div>
+                </div>
+                <div class="row text-start">
+                    <div class="col" id="pokeMov"></div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <footer>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">Pokedex Launch X</div>
+                <div class="col"> Elaborada por Marco Torres</div>
+            </div>
+        </div>
+    </footer>
+</body>
+<footer>
+    <script src="./pokedex.js"></script>
+</footer>
+</html>
